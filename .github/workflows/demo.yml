@@ -39,6 +39,8 @@ jobs:
         with:
           name: dist-files
       - name: Output contents of dist folder
-        run: ls -la dist
+        run: ls -la
+      - name: Print current working directory
+        run: pwd
       - name: Deploy
         run: echo "Deploying..."
